@@ -1,5 +1,11 @@
 # @cyan0714-cli/cli
 
+## 0.0.6
+
+### Patch Changes
+
+- xx
+
 ## 0.0.5
 
 ### Patch Changes
