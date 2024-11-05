@@ -8,6 +8,8 @@ const pkgJson = fse.readJSONSync(path.join(import.meta.dirname, '../package.json
 
 const program = new Command();
 
+console.log('test');
+
 program
     .name('cyan0714-cli')
     .description('脚手架 cli')
