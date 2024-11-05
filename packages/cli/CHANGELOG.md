@@ -1,5 +1,12 @@
 # @cyan0714-cli/cli
 
+## 0.0.4
+
+### Patch Changes
+
+- test 01
+- test 02
+
 ## 0.0.3
 
 ### Patch Changes
