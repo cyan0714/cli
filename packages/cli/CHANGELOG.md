@@ -1,5 +1,11 @@
 # @cyan0714-cli/cli
 
+## 0.0.5
+
+### Patch Changes
+
+- 添加获取 git 提交记录作为日报命令
+
 ## 0.0.4
 
 ### Patch Changes
