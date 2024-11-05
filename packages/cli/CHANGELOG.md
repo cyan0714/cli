@@ -1,5 +1,11 @@
 # @cyan0714-cli/cli
 
+## 0.0.3
+
+### Patch Changes
+
+- add console.log test
+
 ## 0.0.2
 
 ### Patch Changes
