@@ -9,8 +9,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "cyan0714-ci": "./dist/index.js",
-    "gl": "./dist/index.js"
+    "cli": "./dist/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
