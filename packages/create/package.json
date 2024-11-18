@@ -13,5 +13,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@guang-cli/utils": "^1.1.2",
+    "@inquirer/prompts": "^7.1.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4"
+  }
 }
