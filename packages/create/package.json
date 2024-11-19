@@ -15,12 +15,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@guang-cli/utils": "^1.1.2",
+    "@cyan0714-cli/utils": "workspace:^",
     "@inquirer/prompts": "^7.1.0",
+    "ejs": "^3.1.10",
     "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
     "ora": "^8.1.1"
   },
   "devDependencies": {
+    "@types/ejs": "^3.1.5",
     "@types/fs-extra": "^11.0.4"
   }
 }
