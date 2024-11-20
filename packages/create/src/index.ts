@@ -4,6 +4,7 @@ import { NpmPackage } from '@cyan0714-cli/utils'
 import path from 'node:path'
 import ora from 'ora'
 import fse from 'fs-extra'
+import prompts from 'prompts'
 
 async function create() {
   const projectTemplate = await select({
@@ -25,8 +26,6 @@ async function create() {
     projectName = await input({ message: '请输入项目名' })
   }
 
-  console.log('projectTemplate', projectTemplate)
-
   const pkg = new NpmPackage({
     name: projectTemplate,
     targetPath: path.join(os.homedir(), '.cyan0714-cli-template'),
@@ -44,14 +43,11 @@ async function create() {
     spinner.stop()
   }
 
-  const spinner = ora('创建项目中...').start()
-
   const templatePath = path.join(pkg.npmFilePath, 'template')
   const targetPath = path.join(process.cwd(), projectName)
-  console.log('fse.existsSync(targetPath)', fse.existsSync(targetPath));
 
   if (fse.existsSync(targetPath)) {
-    const empty = await confirm({ message: '该目录不为空，是否清空' })
+    const empty = await confirm({ message: '该目录不为空，是否清空', default: false })
     if (empty) {
       fse.emptyDirSync(targetPath)
     } else {
@@ -60,8 +56,6 @@ async function create() {
   }
 
   fse.copySync(templatePath, targetPath)
-
-  spinner.stop()
 }
 
 function sleep(timeout: number) {
