@@ -1,0 +1,27 @@
+{
+  "name": "@cyan0714-cli/generate",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.1.0",
+    "fs-extra": "^11.2.0",
+    "openai": "^4.76.1",
+    "ora": "^8.1.1",
+    "remark": "^15.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4"
+  }
+}
