@@ -4,7 +4,6 @@ import { NpmPackage } from '@cyan0714-cli/utils'
 import path from 'node:path'
 import ora from 'ora'
 import fse from 'fs-extra'
-import prompts from 'prompts'
 
 async function create() {
   const projectTemplate = await select({
@@ -63,7 +62,5 @@ function sleep(timeout: number) {
     setTimeout(resolve, timeout)
   })
 }
-
-create()
 
 export default create
