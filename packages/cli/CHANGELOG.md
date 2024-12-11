@@ -1,5 +1,12 @@
 # @cyan0714-cli/cli
 
+## 0.0.10
+
+### Patch Changes
+
+- Updated dependencies
+  - @cyan0714-cli/create@0.0.4
+
 ## 0.0.9
 
 ### Patch Changes
