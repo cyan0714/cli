@@ -1,5 +1,13 @@
 # @cyan0714-cli/cli
 
+## 0.0.9
+
+### Patch Changes
+
+- update version
+- Updated dependencies
+  - @cyan0714-cli/generate@2.0.1
+
 ## 0.0.8
 
 ### Patch Changes
