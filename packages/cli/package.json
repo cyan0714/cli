@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@cyan0714-cli/create": "workspace:^",
+    "@cyan0714-cli/generate": "workspace:^",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0"
   },

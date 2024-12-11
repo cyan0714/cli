@@ -4,6 +4,7 @@ import { Command } from 'commander'
 import fse from 'fs-extra'
 import path from 'node:path'
 import { execSync } from 'child_process'
+import generate from '@cyan0714-cli/generate'
 
 const pkgJson = fse.readJSONSync(path.join(import.meta.dirname, '../package.json'))
 
@@ -23,6 +24,12 @@ program
   .action(async () => {
     create()
   })
+
+program.command('generate')
+  .description('生成组件（基于 AI）')
+  .action(async () => {
+    generate();
+  });
 
 program
   .command('gl')
