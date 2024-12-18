@@ -11,6 +11,7 @@ async function generate() {
   const explorer = cosmiconfig('generate')
 
   const result = await explorer.search(process.cwd())
+  console.log('result', result)
 
   if (!result?.config) {
     console.error('没找到配置文件 generate.config.js')
@@ -75,5 +76,5 @@ async function generate() {
     })
     .process(markdown)
 }
-
+generate()
 export default generate

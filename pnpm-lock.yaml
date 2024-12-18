@@ -32,12 +32,21 @@ importers:
       '@cyan0714-cli/generate':
         specifier: workspace:^
         version: link:../generate
+      '@cyan0714-cli/git-log':
+        specifier: workspace:^
+        version: link:../git-log
       commander:
         specifier: ^12.1.0
         version: 12.1.0
       fs-extra:
         specifier: ^11.2.0
         version: 11.2.0
+      openai:
+        specifier: ^4.76.1
+        version: 4.76.1(encoding@0.1.13)
+      ora:
+        specifier: ^8.1.1
+        version: 8.1.1
     devDependencies:
       '@types/fs-extra':
         specifier: ^11.0.4
@@ -101,6 +110,18 @@ importers:
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
+
+  packages/git-log:
+    dependencies:
+      cosmiconfig:
+        specifier: ^9.0.0
+        version: 9.0.0(typescript@5.6.3)
+      openai:
+        specifier: ^4.76.1
+        version: 4.76.1(encoding@0.1.13)
+      ora:
+        specifier: ^8.1.1
+        version: 8.1.1
 
   packages/template-react: {}
 

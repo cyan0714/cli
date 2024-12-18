@@ -3,7 +3,7 @@ npx changeset add
 npx changeset version
 npx changeset publish
 
-## run cli command example
+## example
 pnpm --filter create exec npx tsc
 pnpm --filter create exec node ./dist/index.js
 
