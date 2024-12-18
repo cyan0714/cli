@@ -1,5 +1,12 @@
 # @cyan0714-cli/cli
 
+## 0.0.12
+
+### Patch Changes
+
+- Updated dependencies
+  - @cyan0714-cli/git-log@1.0.1
+
 ## 0.0.11
 
 ### Patch Changes
